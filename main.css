@@ -1,0 +1,122 @@
+body{
+    background-image: url(images/backgroind.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    border-radius: 12px;
+    width: 455px;
+    height: 570px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    position: relative;
+}
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.input-btn__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+input{
+    width: 320px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius:3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #858784;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+}
+button{
+    width: 55px;
+    height: 50px;
+    background: #8D48F0;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.list {
+}
+.item {
+    width: 396px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B4B4B;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.item__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #4B4B4B;
+    box-sizing: border-box;
+    padding: 15px 15px;
+
+}
+.delete_icon {
+    cursor: pointer;
+    opacity:0;
+    transition: 0.3s;
+}
+.item:hover .delete_icon{
+    opacity:1;
+}
+.bttm__wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+.info {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1A1A1A;
+    margin-bottom: 40px;
+}
+.clear__btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background: #8D48F0;
+    border-radius: 2px;
+}

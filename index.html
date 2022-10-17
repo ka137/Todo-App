@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+            <h1 class="title">Todo App</h1>
+            <div class="input-btn__wrapper">
+                <input type="text" id="input" placeholder="add your new todo">
+                <button id = "btn" ><img src="images/icon_1.svg" alt="icon"></button>
+            </div>
+            <ul class="list" id = "list">
+            </ul>
+            <span class="bttm__wrapper">
+                <div class="info">You have &nbsp;<div id="total">0</div>&nbsp;pending tasks</div>
+               <!-- <div class="clear__btn">clear all</div>-->
+            </span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
