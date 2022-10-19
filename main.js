@@ -23,9 +23,17 @@ function pressed(event) {
         input.value = ''
     }
 }
+result.addEventListener('click', deleteTask)
 // чистим все
 clearall.addEventListener('click',(e) => {
     result.innerHTML = '<ul class="list" id = "list"></ul>'
     total_counter = 0
     total.innerHTML = +total_counter
 })
+function deleteTask(event){
+    if(event.target.id === 'delete-item'){
+        event.target.closest('li').remove()
+        total_counter -= 1
+        total.innerHTML = +total_counter
+    }
+}
