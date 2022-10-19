@@ -16,14 +16,14 @@
         <div class="block">
             <h1 class="title">Todo App</h1>
             <div class="input-btn__wrapper">
-                <input type="text" id="input" placeholder="add your new todo">
+                <input type="text" id="input" placeholder="add your new todo" onkeydown="pressed(event)">
                 <button id = "btn" ><img src="images/icon_1.svg" alt="icon"></button>
             </div>
             <ul class="list" id = "list">
             </ul>
             <span class="bttm__wrapper">
-                <div class="info">You have &nbsp;<div id="total">0</div>&nbsp;pending tasks</div>
-               <!-- <div class="clear__btn">clear all</div>-->
+                <div class="info">You have <div class="">&nbsp;</div><div id="total">0</div><div class="">&nbsp;</div>pending tasks</div>
+               <button class="clear__btn" id = "clear_all" >clear all</button>
             </span>
         </div>
     </div>

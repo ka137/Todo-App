@@ -13,7 +13,8 @@ body{
 .block{
     border-radius: 12px;
     width: 455px;
-    height: 570px;
+    min-height: 300px;
+    max-height: 80%;
     background-color: #fff;
     box-sizing: border-box;
     padding: 40px 30px;
@@ -59,6 +60,11 @@ button{
     cursor: pointer;
 }
 .list {
+    min-width: 420px;
+    max-height: 450px;
+    margin-bottom: 20px;
+    overflow-y:auto;
+    overflow-x: hidden;
 }
 .item {
     width: 396px;
@@ -97,8 +103,8 @@ button{
 }
 .bttm__wrapper {
     display: flex;
-    position: absolute;
-    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 .info {
     display: flex;
@@ -108,9 +114,10 @@ button{
     font-size: 20px;
     line-height: 23px;
     color: #1A1A1A;
-    margin-bottom: 40px;
 }
 .clear__btn {
+    width: 95px;
+    height: 40px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -119,4 +126,8 @@ button{
     color: #FFFFFF;
     background: #8D48F0;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
