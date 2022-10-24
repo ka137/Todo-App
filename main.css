@@ -1,11 +1,11 @@
 body{
     background-image: url(images/backgroind.jpg);
-    background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
+    position: relative;
     overflow: hidden;
-}
-.container {
     height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,10 @@ button{
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #985bee
 }
 .list {
     min-width: 420px;
@@ -68,7 +72,7 @@ button{
 }
 .item {
     width: 396px;
-    height: 50px;
+    max-height: none;
     background: #F2F2F2;
     border-radius: 2px;
     font-family: 'Roboto';
@@ -81,6 +85,7 @@ button{
     justify-content: space-between;
     margin-top: 10px;
     cursor: pointer;
+    word-break: break-all;
 }
 .item__text{
     font-family: 'Roboto';
@@ -130,4 +135,43 @@ button{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: 0.3s;
+}
+.clear__btn:hover{
+    background-color: #985bee;
+}
+@media (max-width:480px){
+    .block{
+        width: 380px;
+        padding: 30px 20px;
+    }
+    .title {
+        font-size: 33px;
+    }
+    .input-btn__wrapper {
+    }
+    input{
+        height: 45px;
+        width: 270px;
+    }
+    button{
+        height: 45px;
+        width: 50px;
+    }
+    .list {
+        width: 320px;
+        max-height:225px;
+        margin-bottom: 20px;
+    }
+    .item{
+        width: 320px;
+    }
+    .bttm__wrapper {
+    }
+    .info {
+        font-size: 19px;
+    }
+    .clear__btn {
+        font-size: 19px;
+    }
 }
