@@ -9,16 +9,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 .block{
     border-radius: 12px;
-    width: 455px;
+    width: 460px;
     min-height: 300px;
     max-height: 80%;
     background-color: #fff;
     box-sizing: border-box;
     padding: 40px 30px;
-    position: relative;
+    position: fixed;
 }
 .title {
     font-family: 'Roboto';
@@ -70,6 +71,13 @@ button:hover{
     overflow-y:auto;
     overflow-x: hidden;
 }
+.list::-webkit-scrollbar {
+    width: 10px;
+}
+.list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #18aaaa;
+}
 .item {
     width: 396px;
     max-height: none;
@@ -96,7 +104,6 @@ button:hover{
     color: #4B4B4B;
     box-sizing: border-box;
     padding: 15px 15px;
-
 }
 .delete_icon {
     cursor: pointer;
@@ -147,8 +154,10 @@ button:hover{
     }
     .title {
         font-size: 33px;
+        margin-bottom: 20px;
     }
     .input-btn__wrapper {
+        margin-bottom: 20px;
     }
     input{
         height: 45px;
@@ -165,8 +174,11 @@ button:hover{
     }
     .item{
         width: 320px;
+        min-height: 45px;
     }
-    .bttm__wrapper {
+    .item__text{
+        font-size: 17px;
+        padding: 15px;
     }
     .info {
         font-size: 19px;
@@ -175,3 +187,88 @@ button:hover{
         font-size: 19px;
     }
 }
+@media (max-width:400px){
+    .block{
+        min-height: 200px;
+        width: 300px;
+        padding: 20px 10px;
+    }
+    .title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .input-btn__wrapper {
+        margin-bottom: 10px;
+    }
+    input{
+        height: 40px;
+        width: 225px;
+    }
+    button{
+        height: 40px;
+        width: 45px;
+    }
+    .list {
+        width: 280px;
+        max-height:225px;
+        margin-bottom: 20px;
+    }
+    .item{
+        width: 280px;
+        min-height: 40px;
+    }
+    .item__text{
+        font-size: 15px;
+        padding: 15px;
+        min-height: 40px;
+    }
+    .info {
+        font-size: 16px;
+    }
+    .clear__btn {
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+@media (max-height:910px){
+    .list{
+        max-height: 400px;
+    }
+}
+@media (max-height:860px){
+    .list{
+        max-height: 300px;
+    }
+}
+@media (max-height:735px){
+    .list{
+        max-height: 200px;
+    }
+}
+@media (max-height:605px){
+    .title{
+        margin-bottom: 10px;
+    }
+    .input-btn__wrapper{
+        margin-bottom: 10px;
+    }
+    .list{
+        max-height: 200px;
+    }
+}
+@media (max-height:564px){
+    .title{
+        margin-bottom: 10px;
+    }
+    .input-btn__wrapper{
+        margin-bottom: 10px;
+    }
+    .list{
+        max-height: 150px;
+    }
+}
+
+
+
+
